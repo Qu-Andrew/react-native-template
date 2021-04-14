@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "expo-template-tabs",
+    "name": "Linkder Mobile",
+    "slug": "linkder-mobile",
     "platforms": [
       "ios",
       "android",
@@ -24,6 +24,7 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "This is the mobile application for Linkder"
   }
 }
