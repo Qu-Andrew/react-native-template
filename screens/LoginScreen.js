@@ -29,11 +29,14 @@ export default class LoginScreen extends React.Component {
         password
       })
     })
-    console.log("Fetch complete")
     .then(response => response.json())
     .then(json => {
       console.log(`Logging in with session token: ${json.token}`);
-
+      SecureStore.setItemAsync('token', json.token);
+      // sessionStorage.setItem('token', json.token);
+      const token = SecureStore.getItemAsync('token');
+      console.log(token)
+      // console.log('Testing sessionStorage token: ' + json.token);
       // enter login logic here
       SecureStore.setItemAsync('session', json.token).then(() => {
         this.props.route.params.onLoggedIn();

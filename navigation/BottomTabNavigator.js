@@ -38,11 +38,12 @@ export default function BottomTabNavigator({ navigation, route }) {
 }
 
 function getHeaderTitle(route) {
-  const routeName = getFocusedRouteNameFromRoute(route);
+  // const routeName = getFocusedRouteNameFromRoute(route);
+  const routeName = 'Home'
 
   switch (routeName) {
     case 'Home':
-      return 'How to get started';
+      return 'Home Screen';
     case 'Links':
       return 'Links to learn more';
   }

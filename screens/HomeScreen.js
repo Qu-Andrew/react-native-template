@@ -19,7 +19,7 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <Text>Hi</Text>
+          <Text>You are now logged in!</Text>
         </ScrollView>
       </View>
     );
